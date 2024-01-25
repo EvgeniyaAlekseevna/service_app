@@ -33,4 +33,9 @@ docker-compose run --rm  web-app sh -c "python manage.py startapp services"
 docker-compose run --rm  web-app sh -c "python manage.py makemigrations clients"
 docker-compose run --rm  web-app sh -c "python manage.py migrate clients"
 
+docker-compose run --rm  web-app sh -c "python manage.py makemigrations services"
+docker-compose run --rm  web-app sh -c "python manage.py migrate services"
+
+
+
 # Тестирование
