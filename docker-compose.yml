@@ -5,7 +5,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./service:/service
+      - ./service_app:/service_app
     environment:
       - DB_HOST=database
       - DB_NAME=dbname

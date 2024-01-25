@@ -24,6 +24,13 @@ docker-compose run --rm  web-app sh -c "python manage.py migrate"
 создание админа
 docker-compose run --rm  web-app sh -c "python manage.py createsuperuser"
 
+создание приложения/проекта
+docker-compose run --rm  web-app sh -c "python manage.py startapp clients"
+docker-compose run --rm  web-app sh -c "python manage.py startapp services"
 
+регистрирум приложения в settings
+
+docker-compose run --rm  web-app sh -c "python manage.py makemigrations clients"
+docker-compose run --rm  web-app sh -c "python manage.py migrate clients"
 
 # Тестирование

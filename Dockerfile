@@ -8,8 +8,8 @@ RUN pip install -r /temp/requirements.txt
 
 RUN adduser --disabled-password service-user
 
-COPY service /service
-WORKDIR /service
+COPY service_app /service_app
+WORKDIR /service_app
 EXPOSE 8000
 
 USER service-user
