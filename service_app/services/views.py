@@ -23,6 +23,6 @@ class SubscriptionView(ReadOnlyModelViewSet):
 
         response_data = {'result': response.data}
         response_data['total_amount'] = queryset.aggregate(total=Sum('price')).get('total')
-        response.data=response_data
+        response.data = response_data
 
         return response

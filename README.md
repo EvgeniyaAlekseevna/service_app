@@ -38,4 +38,7 @@ docker-compose run --rm  web-app sh -c "python manage.py migrate services"
 
 http://127.0.0.1:8000/api/subscription/?format=json
 
+docker-compose run --rm  web-app sh -c "python manage.py shell"
+
+
 # Тестирование
